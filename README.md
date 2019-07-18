@@ -1,4 +1,6 @@
-# Simple Application Starter v2
+# CSS Selectors
+
+Baed on the [The Ultimate CSS Selectors Cheatsheet](https://www.adtrak.co.uk/blog/the-ultimate-css-selectors-cheatsheet/)
 
 ## Installation
 
