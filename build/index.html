@@ -9,10 +9,58 @@
   </head>
   <body>
     <div class="container">
-      <section>
-        <div>
-          <p>Hello World!</p>
+      <h1>CSS Selectors</h1>
+      <h2>Basic</h2>
+      <section class="basic">
+        <div class="block">
+          <div class="block-row">
+            <p class="selector star">*</p>
+            <p>The universal selector</p>
+          </div>
+          <div class="block-row universal">
+            <h1 class="p block-cell">h1</h1>
+            <p class="block-cell">p</p>
+            <p class="block-cell">p</p>
+            <ul class="block-cell">
+              ul
+            </ul>
+            <p class="block-cell">p</p>
+          </div>
         </div>
+        <!--//.universal -->
+
+        <div class="block">
+          <div class="block-row">
+            <p class="selector">h1 + p</p>
+            <p>The adjacent sibling combinator</p>
+          </div>
+          <div class="block-row adjacent-sibling">
+            <h1 class="p block-cell">h1</h1>
+            <p class="block-cell">p</p>
+            <p class="block-cell">p</p>
+            <ul class="block-cell">
+              ul
+            </ul>
+            <p class="block-cell">p</p>
+          </div>
+        </div>
+        <!--//.adjacent sibling -->
+
+        <div class="block">
+          <div class="block-row">
+            <span>*</span> <span>The general sibling combinator</span>
+          </div>
+          <div class="block-row general-sibling">
+            <h1 class="p block-cell">h1</h1>
+            <p class="block-cell">p</p>
+            <p class="block-cell">p</p>
+            <ul class="block-cell">
+              ul
+            </ul>
+            <p class="block-cell">p</p>
+          </div>
+        </div>
+        <!--//.adjacent sibling -->
       </section>
     </div>
     <script src="/js/index.js"></script>
