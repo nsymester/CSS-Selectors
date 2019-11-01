@@ -1,136 +1,14 @@
-$softRed: #ec5947;
-$veryDarkGrayishRed: #372d2b;
-$darkModerateCyan: #47b1a7;
-$veryLightGray :#ebebeb;
+/* @group settings */
+@import 'settings';
 
-body {
-  font-size: 18px;
-  line-height: 18px;
-  font-family: Arial, Helvetica, sans-serif
-}
+/* @group elements */
+@import 'elements';
 
-p, .p {
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 18px;
-  margin-bottom:0;
-  padding-bottom:0;
-  margin-top:0;
-  text-align: center;
-}
+/* @group objects */
+@import 'objects';
 
-ul {
-  margin: 0;
-}
+/* @group components */
+@import 'components';
 
-.section-title {
-  background-color: $softRed;
-  padding: 15px;
-  color: white;
-  font-weight: normal;
-  letter-spacing :1px;
-  text-transform: uppercase;
-  font-size:20px;
-}
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-.selector-block {
-
-  .block {
-    padding:12px;
-    &:nth-child(odd) {
-      background-color: $veryLightGray;
-    }
-  }
-}
-
-.block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.block-row {
-  display:flex;
-  align-items: center;
-  height:auto;
-
-  &:first-child {
-    margin-right:10px;
-  }
-}
-
-.block-column {
-  display:flex;
-  flex-flow:column nowrap;
-
-}
-
-.block-cell {
-  padding:10px;
-  background-color: $veryDarkGrayishRed;
-  width: 20px;
-  height: 20px;
-  color: white;
-  margin:2px;
-}
-
-.universal * {
-  background-color: $softRed;
-}
-
-.adjacent-sibling h1 + p {
-  background-color: $softRed;
-}
-
-.general-sibling h1 ~ p {
-  background-color: $softRed;
-}
-
-.selector {
-  background-color: $darkModerateCyan;
-  width:100px;
-  text-align:center;
-  display:block;
-  height: 100%;
-  color: white;
-  margin-right:10px;
-  padding:10px;
-
-  &.star {
-    font-size: 2em;
-    line-height: 36px;
-    height: 18px;
-  }
-}
+/* @group overrides */
+@import 'overrides';

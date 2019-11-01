@@ -1,0 +1,37 @@
+/* @group settings */
+@import 'settings';
+
+/* @group elements */
+@import 'elements';
+
+/* @group objects */
+@import 'objects';
+
+/* @group components */
+@import 'components';
+
+/* @group overrides */
+@import 'overrides';
+
+.grid {
+    display: grid;
+    grid-template-rows: minmax(100px auto);
+
+    div {
+        display: flex;
+    }
+
+    div p {
+        border: 1px solid rgb(0, 95, 107);
+        border-radius: 3px;
+        background-color: rgba(0, 95, 107, 0.8);
+        padding: 0.2em;
+        color: #fff;
+    }
+
+
+    // padding:12px;
+    // &:nth-child(odd) {
+    //     background-color: $veryLightGray;
+    // }
+}

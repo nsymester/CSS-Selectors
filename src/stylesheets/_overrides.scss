@@ -1,0 +1,19 @@
+.w100 {
+    width: 100px;
+}
+
+.mb10 {
+    margin-bottom: 1px;
+}
+
+.universal * {
+    background-color: $softRed;
+}
+
+.adjacent-sibling h1+p {
+    background-color: $softRed;
+}
+
+.general-sibling h1~p {
+    background-color: $softRed;
+}

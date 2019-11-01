@@ -1,0 +1,66 @@
+/**
+ * @desc selector
+ */
+.selector {
+    background-color: $darkModerateCyan;
+    color: white;
+    text-align: center;
+    display: block;
+    height: 100%;
+    margin-right: 10px;
+    padding: 10px;
+
+    &.star {
+        font-size: 2em;
+        line-height: 36px;
+        height: 18px;
+    }
+
+    &--nth-child {
+
+        flex-flow: row wrap;
+        width: 220px;
+
+        .block-cell:nth-child(2n+1) {
+            background-color: $softRed
+        }
+    }
+}
+
+.block {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        height: auto;
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    &__cell {
+        font-weight: 300;
+        font-size: 1rem;
+        padding: 10px;
+        background-color: $veryDarkGrayishRed;
+        width: 20px;
+        height: 20px;
+        color: white;
+        margin: 2px;
+        line-height: 20px;
+    }
+
+    &:nth-child(odd) {
+        background-color: white;
+    }
+}

@@ -1,0 +1,21 @@
+body {
+  background-color: $bgColour;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+p,
+.p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 18px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+}
